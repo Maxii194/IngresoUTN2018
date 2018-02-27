@@ -2,17 +2,25 @@ function Mostrar()
 {
 
     var numero = parseInt(prompt("Ingrese un numero: "));
+    var primo = 0;
 
     for(var i=1; i <= numero; i++){
 
-        if(numero % i == 0){
+        if(numero % i == 0) {
 
-            alert("Numero divisor: "+i);
-            cantDivisores++;
+            primo++;
         }
            
     }
 
+    if(primo != 2){
+
+        alert(numero + " No es numero primo");        
+    }
+    else{
+
+        alert(numero + " Es numero primo");
+    }
 
 
 

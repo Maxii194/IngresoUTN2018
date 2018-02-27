@@ -7,13 +7,13 @@ function Mostrar()
 
         if(numero % i == 0){
 
-            alert("Numero divisor: "+i);
+            console.log("Numero divisor: "+i);
             cantDivisores++;
         }
            
     }
 
-    alert("Cantidad de numeros Divisores encontrados: "+cantDivisores);
+    console.log("Cantidad de numeros Divisores encontrados: "+cantDivisores);
 
 
 
