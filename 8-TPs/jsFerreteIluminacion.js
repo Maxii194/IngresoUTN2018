@@ -10,5 +10,97 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
+
+	var  cantLamparas, precioTotal, descuento, marca, impuesto, importeFinal;
+
+	cantLamparas = parseInt(document.getElementById("Cantidad").value);
+	marca = document.getElementById("Marca").value;
+
+	if(cantLamparas >= 6){
+
+		precioTotal = cantLamparas * 35;
+		descuento = (50/100)*precioTotal;
+		total = precioTotal - descuento;
+
+		alert("Precio Total  de " + cantLamparas + " : " + Total );
+	}
+	
+	else if(cantLamparas == 5 && marca == "ArgentinaLuz"){
+
+		precioTotal = cantLamparas * 35;
+		descuento = (40/100)*precioTotal;
+		total = precioTotal - descuento;
+
+		alert("Precio Total  de " + cantLamparas + " : " + Total );
+	}
+
+	else if(cantLamparas == 5 && marca != "ArgentinaLuz"){
+
+		precioTotal = cantLamparas * 35;
+		descuento = (40/100)*precioTotal;
+		total = precioTotal - descuento;
+
+		alert("Precio Total  de " + cantLamparas + " : " + Total );
+	}
+
+	else if(cantLamparas == 4 && marca == "ArgentinaLuz" ){
+
+		precioTotal = cantLamparas * 35;
+		descuento = (25/100)*precioTotal;
+		total = precioTotal - descuento;
+
+		alert("Precio Total  de " + cantLamparas + " : " + Total );
+	}
+
+	else if(cantLamparas == 4 && marca == "FelipeLamparas" ){
+
+		precioTotal = cantLamparas * 35;
+		descuento = (25/100)*precioTotal;
+		total = precioTotal - descuento;
+
+		alert("Precio Total  de " + cantLamparas + " : " + Total );
+	}
+
+	else if(cantLamparas == 4 && marca != "ArgentinaLuz" && marca !="FelipeLamparas" ){
+
+		precioTotal = cantLamparas * 35;
+		descuento = (20/100)*precioTotal;
+		total = precioTotal - descuento;
+
+		alert("Precio Total  de " + cantLamparas + " : " + Total );
+	}
+
+	else if(cantLamparas == 3 && marca == "ArgentinaLuz" ){
+
+		precioTotal = cantLamparas * 35;
+		descuento = (15/100)*precioTotal;
+		total = precioTotal - descuento;
+
+		alert("Precio Total  de " + cantLamparas + " : " + Total );
+	}
+
+	else if(cantLamparas == 3 && marca == "FelipeLamparas" ){
+
+		precioTotal = cantLamparas * 35;
+		descuento = (10/100)*precioTotal;
+		total = precioTotal - descuento;
+
+		alert("Precio Total  de " + cantLamparas + " : " + Total );
+	}
+
+	else if(cantLamparas == 43 && marca != "ArgentinaLuz" && marca !="FelipeLamparas" ){
+
+		precioTotal = cantLamparas * 35;
+		descuento = (5/100)*precioTotal;
+		total = precioTotal - descuento;
+
+		alert("Precio Total  de " + cantLamparas + " : " + Total );
+	}
  	
+	if(total > 120){
+		
+		impuesto = (10/100) * total;
+		importeFinal = total + impuesto; 
+	}
+
 }
