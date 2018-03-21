@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    /*int num1,num2,num3;
+    int maximo;
+
+    printf("Ingrese un numero: \n");
+    scanf("%d",&num1);
+    printf("Ingrese otro numero: \n");
+    scanf("%d",&num2);
+    printf("Ingrese otro numero:\n");
+    scanf("%d",&num3);
+
+
+    if(num1 > num2 && num1 > num3){
+        maximo = num1;
+    }
+    else{
+        if(num2 > num1 && num2 > num3){
+            maximo = num2;
+         }
+        else{
+            maximo = num3;
+        }
+    }
+
+    printf("%d",maximo);*/
+
+    char apellido;
+    float sueldo, sueldoFinal;
+    int aumento, aux;
+
+    printf("Ingrese apellido: \n");
+    scanf("%c",&apellido);
+    printf("Ingrese sueldo: \n");
+    scanf("%f",&sueldo);
+    printf("Ingrese aumento: \n");
+    scanf("%d",&aumento);
+
+    aux = (aumento*sueldo)/100;
+
+    sueldoFinal = sueldo + aux;
+
+    printf("Su apellido es: %c su sueldo es %.2f y el aumento sera de %d\n",apellido,sueldo,aumento);
+    printf("El sueldo final es: %.2f", sueldoFinal);
+
+
+    return 0;
+}
